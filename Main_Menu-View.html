@@ -3,35 +3,85 @@
 <head>
 <style>
 .button {
-	border: none;
+	<!-- border: none; -->
 	color: black;
-	padding: 15px 15px;
+	padding: 10px 15px;
 	text-align: center;
 	display: block;
 	font-size: 20px;
 	margin: 10px 10px;
 	cursor: pointer;
 }
-.button0 {float: right; margin: 0px 10px}
-.button1
-.button2
-.button3
-.button4
-.button5
+.logout {
+	padding: 10px 15px;
+	float: right;
+	margin: 0px 10px
+	cursor: pointer;
+}
 </style>
 </head>
 <body>
 
-
-
-<button class="button button0">
+<button class="logout">
 <img src="logout-24px.svg" alt="Logout">
 </button>
-<button class="button button1">Start Transaction</button>
-<button class="button button2">View Products</button>
-<button class="button button3">Create Employee</button>
-<button class="button button4">Sales Report</button>
-<button class="button button5">Cashier Report</button>
+
+<button class="button" id="button0">
+Start Transaction
+</button>
+
+<button class="button" id="button1">
+View Products
+</button>
+
+<button class="button" id="button2">
+Create Employee
+</button>
+
+<button class="button" id="button3">
+Sales Report
+</button>
+
+<button class="button" id="button4">
+Cashier Report
+</button>
+
+
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
+
+document.getElementById("button0").addEventListener("click", Start_transaction);
+
+function Start_transaction() {
+  alert ("Functionality has not yet been implemented!");
+}
+
+document.getElementById("button1").addEventListener("click", View_products);
+
+function View_products() {
+  alert ("Hello World!");  // need to modify
+}
+
+document.getElementById("button2").addEventListener("click", Create_employee);
+
+function Create_employee() {
+  alert ("Hello World!");  // need to modify
+}
+
+document.getElementById("button3").addEventListener("click", Sales_report);
+
+function Sales_report() {
+  alert ("Functionality has not yet been implemented!");
+}
+
+document.getElementById("button4").addEventListener("click", Cashier_report);
+
+function Cashier_report() {
+  alert ("Functionality has not yet been implemented!");
+}
+</script>
 
 </body>
 </html>
